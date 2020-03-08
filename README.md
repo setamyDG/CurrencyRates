@@ -1,4 +1,4 @@
-# iteratorsTask
+# IteratorsTask
 Currency Rates Application
 The application displays a list of exchange rates based on publicly available API.
 The application allows setting limit values ​​for the exchange rate (e.g. USD / PLN> 4.00 or USD / PLN <3.70), after exceeding which the application will inform the user about this fact,
