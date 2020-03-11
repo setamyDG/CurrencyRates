@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import PropTypes from 'prop-types';
 
 const CustomButton = props => (
   <TouchableOpacity style={styles.buttonStyle} onPress={props.onClick}>
@@ -22,3 +23,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+CustomButton.propTypes = {
+  onClick: PropTypes.func,
+  buttonTitle: PropTypes.string,
+};

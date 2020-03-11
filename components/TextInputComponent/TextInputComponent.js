@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, TextInput, StyleSheet} from 'react-native';
+import PropTypes from 'prop-types';
 
 const TextInputComponent = props => (
   <View>
@@ -24,3 +25,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
+TextInputComponent.propTypes = {
+  value: PropTypes.string,
+  onChangeText: PropTypes.func,
+  editable: PropTypes.bool,
+  placeholder: PropTypes.string,
+};

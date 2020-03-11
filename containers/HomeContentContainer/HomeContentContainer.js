@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, ImageBackground, Alert} from 'react-native';
+import PropTypes from 'prop-types';
 import CustomButton from '../../components/CustomButton/CustomButton';
 import ResultText from '../../components/ResultText/ResultText';
 import PickerComponent from '../../components/PickerComponent/PickerComponent';
@@ -195,3 +196,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+HomeContentContainer.propTypes = {
+  base: PropTypes.string,
+  amount: PropTypes.string,
+  secondAmount: PropTypes.string,
+  convertTo: PropTypes.string,
+  result: PropTypes.string,
+};

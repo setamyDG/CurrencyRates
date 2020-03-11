@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Picker, StyleSheet} from 'react-native';
+import PropTypes from 'prop-types';
 
 class PickerComponent extends React.Component {
   state = {
@@ -59,3 +60,9 @@ const styles = StyleSheet.create({
     width: 100,
   },
 });
+
+PickerComponent.propTypes = {
+  onValueChange: PropTypes.func,
+  enabled: PropTypes.bool,
+  selectedValue: PropTypes.string,
+};

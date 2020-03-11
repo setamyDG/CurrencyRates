@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import PropTypes from 'prop-types';
 
 const ResultText = props => (
   <View>
@@ -21,3 +22,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Ionicons',
   },
 });
+
+ResultText.propTypes = {
+  equevalentText: PropTypes.string,
+  amountText: PropTypes.string,
+  dateText: PropTypes.string,
+};
